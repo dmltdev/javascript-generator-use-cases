@@ -4,7 +4,7 @@ function* genFunction() {
 }
 
 // Generator object
-let genObject = genFunction();
+const genObject = genFunction();
 
 console.log(genObject.next());
 console.log(genObject.next());
@@ -18,7 +18,7 @@ function* loggerator() {
   return "stopped";
 }
 
-let logger = loggerator();
+const logger = loggerator();
 
 logger.next(); //?
 logger.next(); //?
@@ -31,7 +31,7 @@ function* abcs() {
   yield "c";
 }
 
-for (let letter of abcs()) {
+for (const letter of abcs()) {
   console.log(letter.toUpperCase());
 }
 

@@ -1,0 +1,20 @@
+# JavaScript Generators
+
+This repo contains examples of using JavaScript generators.
+
+It is heavily based on the [conference talk by Anjana Vakil](https://www.youtube.com/watch?v=gu3FfmgkwUc).
+
+## Introduction
+
+Generators are a way to control the execution of a function. 
+They are similar to functions, but they can yield values and pause execution.
+
+Because of the way the generators work, they have practical uses:
+
+- custom iterables
+- lazy/infinite sequences
+- state machines
+- data processing
+- data streams
+- pagination
+- coroutines

@@ -1,3 +1,6 @@
+// With generators, you can create custom iterators
+// This is useful for creating infinite sequences, lazy evaluation, data transformations, etc.
+
 const cardDeck = {
   suits: ["♣️", "♠️", "♥️", "♦️"],
   court: ["J", "Q", "K", "A"],
@@ -6,7 +9,7 @@ const cardDeck = {
       for (let i = 2; i <= 10; i++) {
         yield suit + i;
       }
-      for (let c of this.court) {
+      for (const c of this.court) {
         yield suit + c;
       }
     }
@@ -14,5 +17,3 @@ const cardDeck = {
 };
 
 console.log([...cardDeck]);
-
-const fruits = ["apple", "banana", "cherry"];

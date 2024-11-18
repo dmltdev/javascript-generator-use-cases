@@ -9,6 +9,7 @@ function* infinityAndBeyond() {
 }
 
 const generator = infinityAndBeyond();
+console.log(generator.next());
 
 function* take(n: number, iterable: Iterable<number>) {
   for (const item of iterable) {
